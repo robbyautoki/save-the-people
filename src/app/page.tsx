@@ -27,34 +27,6 @@ const navigationData: NavigationSection[] = [
   }
 ]
 
-const testimonials = [
-  {
-    name: 'Volunteer',
-    avatar: '/WhatsApp Image 2025-12-07 at 14.04.30 (1).jpeg',
-    title: 'Together we change lives'
-  },
-  {
-    name: 'Supporter',
-    avatar: '/WhatsApp Image 2025-12-07 at 14.04.30 (2).jpeg',
-    title: 'Every bit of help counts'
-  },
-  {
-    name: 'Helper',
-    avatar: '/WhatsApp Image 2025-12-07 at 14.04.30 (3).jpeg',
-    title: 'Hope for children worldwide'
-  },
-  {
-    name: 'Partner',
-    avatar: '/WhatsApp Image 2025-12-07 at 14.04.30 (4).jpeg',
-    title: 'Together we are strong'
-  },
-  {
-    name: 'Donor',
-    avatar: '/WhatsApp Image 2025-12-07 at 14.04.30 (5).jpeg',
-    title: 'Giving smiles to those in need'
-  }
-]
-
 const tabsData = [
   {
     name: 'Food Distribution',
@@ -138,7 +110,7 @@ export default function Home() {
     <div className='flex min-h-screen flex-col bg-background'>
       <Header navigationData={navigationData} />
       <main className='flex flex-col'>
-        <HeroSection testimonials={testimonials} />
+        <HeroSection />
         <SocialProof />
         <Features tabs={tabsData} />
         <FAQ faqItems={faqData} />

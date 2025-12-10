@@ -47,6 +47,23 @@ const SocialProof = () => {
             Together with our supporters, we're reaching communities in need across the globe.
             Every contribution helps us bring hope, dignity, and a brighter future to children and families.
           </MotionPreset>
+
+          <MotionPreset
+            component='blockquote'
+            className='mt-6 flex flex-col items-center gap-1'
+            fade
+            blur
+            slide={{ direction: 'down', offset: 50 }}
+            delay={0.8}
+            transition={{ duration: 0.5 }}
+          >
+            <p className='text-lg font-medium italic text-primary sm:text-xl'>
+              "Do Good for no Reason"
+            </p>
+            <cite className='text-muted-foreground text-sm not-italic'>
+              — Katharina Erdem
+            </cite>
+          </MotionPreset>
         </div>
 
         <div className='grid gap-6 sm:grid-cols-2 xl:grid-cols-3'>

@@ -4,8 +4,6 @@ import Support from '@/assets/svg/support'
 
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { Card, CardContent } from '@/components/ui/card'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
 import { Marquee } from '@/components/ui/marquee'
 import { MotionPreset } from '@/components/ui/motion-preset'
@@ -17,13 +15,37 @@ const features = [
   { img: <Support />, label: 'Communities Supported' }
 ]
 
-type Testimonial = {
-  name: string
-  avatar: string
-  title: string
-}
+const galleryImagesRow1 = [
+  '/WhatsApp Image 2025-12-07 at 14.04.29.jpeg',
+  '/WhatsApp Image 2025-12-07 at 14.04.30.jpeg',
+  '/WhatsApp Image 2025-12-07 at 14.04.30 (1).jpeg',
+  '/WhatsApp Image 2025-12-07 at 14.04.30 (2).jpeg',
+  '/WhatsApp Image 2025-12-07 at 14.04.30 (3).jpeg',
+  '/WhatsApp Image 2025-12-07 at 14.04.30 (4).jpeg',
+  '/WhatsApp Image 2025-12-07 at 14.04.30 (5).jpeg',
+  '/WhatsApp Image 2025-12-07 at 14.04.30 (6).jpeg',
+  '/WhatsApp Image 2025-12-07 at 14.04.30 (7).jpeg',
+  '/WhatsApp Image 2025-12-07 at 14.04.30 (8).jpeg',
+  '/WhatsApp Image 2025-12-07 at 14.04.30 (9).jpeg',
+  '/WhatsApp Image 2025-12-07 at 14.04.30 (10).jpeg'
+]
 
-const HeroSection = ({ testimonials }: { testimonials: Testimonial[] }) => {
+const galleryImagesRow2 = [
+  '/WhatsApp Image 2025-12-07 at 14.04.30 (11).jpeg',
+  '/WhatsApp Image 2025-12-07 at 14.04.30 (12).jpeg',
+  '/WhatsApp Image 2025-12-07 at 14.04.30 (13).jpeg',
+  '/WhatsApp Image 2025-12-07 at 14.04.30 (14).jpeg',
+  '/WhatsApp Image 2025-12-07 at 14.04.30 (15).jpeg',
+  '/WhatsApp Image 2025-12-07 at 14.04.30 (16).jpeg',
+  '/WhatsApp Image 2025-12-07 at 14.04.30 (17).jpeg',
+  '/WhatsApp Image 2025-12-07 at 14.04.30 (18).jpeg',
+  '/WhatsApp Image 2025-12-07 at 14.04.31.jpeg',
+  '/WhatsApp Image 2025-12-07 at 14.04.31 (1).jpeg',
+  '/WhatsApp Image 2025-12-07 at 14.04.31 (2).jpeg',
+  '/WhatsApp Image 2025-12-07 at 14.04.31 (3).jpeg'
+]
+
+const HeroSection = () => {
   return (
     <section className='flex-1 py-8 sm:py-16 lg:py-24'>
       <BackgroundRippleEffect cellSize={60} rows={11} cols={32} />
@@ -61,6 +83,22 @@ const HeroSection = ({ testimonials }: { testimonials: Testimonial[] }) => {
             >
               We provide food, shelter, and hope to children in need. <br className='max-sm:hidden' /> Join us in
               making the world a better place for everyone.
+            </MotionPreset>
+
+            <MotionPreset
+              component='blockquote'
+              fade
+              slide={{ direction: 'down', offset: 50 }}
+              delay={0.6}
+              transition={{ duration: 0.5, ease: 'easeOut' }}
+              className='z-10 flex flex-col items-center gap-2'
+            >
+              <p className='text-xl font-medium italic text-primary sm:text-2xl'>
+                "Do Good for no Reason"
+              </p>
+              <cite className='text-muted-foreground text-sm not-italic'>
+                — Katharina Erdem
+              </cite>
             </MotionPreset>
           </div>
           <MotionPreset
@@ -100,6 +138,7 @@ const HeroSection = ({ testimonials }: { testimonials: Testimonial[] }) => {
         </div>
       </div>
 
+      {/* Gallery Section */}
       <MotionPreset
         component='div'
         fade
@@ -107,30 +146,34 @@ const HeroSection = ({ testimonials }: { testimonials: Testimonial[] }) => {
         slide={{ direction: 'down', offset: 30 }}
         transition={{ duration: 0.45 }}
         delay={1.1}
-        className='relative z-10 mt-12 w-full overflow-hidden sm:mt-16 lg:mt-24'
+        className='relative z-10 mt-12 w-full sm:mt-16 lg:mt-24'
       >
-        <Marquee pauseOnHover duration={50} gap={1.5} className='pb-5'>
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className='max-w-md transition-shadow duration-500 hover:shadow-xl'>
-              <CardContent className='flex gap-6 sm:items-center'>
-                <Avatar className='size-27.5 rounded-lg'>
-                  <AvatarImage src={`${testimonial.avatar}?width=176&height=176&format=auto`} alt={testimonial.name} />
-                  <AvatarFallback className='rounded-lg'>
-                    {testimonial.name
-                      .split(' ', 2)
-                      .map(n => n[0])
-                      .join('')}
-                  </AvatarFallback>
-                </Avatar>
-                <div className='flex-1 space-y-2'>
-                  <p className='-mb-4 text-3xl'>&ldquo;</p>
-                  <h3 className='text-lg font-medium'>{testimonial.title}</h3>
-                  <h4 className='text-muted-foreground text-sm'>{testimonial.name}</h4>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </Marquee>
+        <div className='from-background pointer-events-none absolute inset-y-0 left-0 z-10 w-20 bg-gradient-to-r to-transparent sm:w-35' />
+        <div className='from-background pointer-events-none absolute inset-y-0 right-0 z-10 w-20 bg-gradient-to-l to-transparent sm:w-35' />
+        <div className='w-full overflow-hidden'>
+          <Marquee pauseOnHover duration={30} gap={1.5}>
+            {galleryImagesRow1.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={`Gallery image ${index + 1}`}
+                className='h-48 w-auto rounded-lg object-cover sm:h-56 lg:h-68'
+              />
+            ))}
+          </Marquee>
+        </div>
+        <div className='w-full overflow-hidden'>
+          <Marquee pauseOnHover duration={30} gap={1.5} reverse>
+            {galleryImagesRow2.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={`Gallery image ${index + 13}`}
+                className='h-48 w-auto rounded-lg object-cover sm:h-56 lg:h-68'
+              />
+            ))}
+          </Marquee>
+        </div>
       </MotionPreset>
     </section>
   )
