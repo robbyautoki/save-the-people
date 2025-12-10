@@ -99,71 +99,73 @@ html {
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  /* Warm & Einladend - Passend zum Charity-Thema */
+  --background: oklch(0.98 0.01 80);          /* Warmes Creme/Off-White */
+  --foreground: oklch(0.25 0.02 50);          /* Warmes Dunkelbraun */
+  --card: oklch(0.99 0.008 80);               /* Leicht wärmeres Weiß */
+  --card-foreground: oklch(0.25 0.02 50);     /* Warmes Dunkelbraun */
+  --popover: oklch(0.99 0.008 80);            /* Warmes Weiß */
+  --popover-foreground: oklch(0.25 0.02 50);  /* Warmes Dunkelbraun */
+  --primary: oklch(0.55 0.18 25);             /* Warmes Terrakotta/Koralle */
+  --primary-foreground: oklch(0.98 0.01 80);  /* Creme */
+  --secondary: oklch(0.94 0.02 80);           /* Warmes Hellbeige */
+  --secondary-foreground: oklch(0.30 0.02 50);/* Dunkelbraun */
+  --muted: oklch(0.94 0.015 75);              /* Gedämpftes Beige */
+  --muted-foreground: oklch(0.45 0.03 50);    /* Mittleres Warmbraun */
+  --accent: oklch(0.92 0.03 70);              /* Sanftes Pfirsich */
+  --accent-foreground: oklch(0.30 0.02 50);   /* Dunkelbraun */
+  --destructive: oklch(0.55 0.22 25);         /* Warmes Rot */
+  --border: oklch(0.90 0.02 70);              /* Warmer Rand */
+  --input: oklch(0.92 0.015 75);              /* Warmes Input */
+  --ring: oklch(0.55 0.18 25);                /* Terrakotta Ring */
+  --chart-1: oklch(0.55 0.18 25);             /* Terrakotta */
+  --chart-2: oklch(0.65 0.15 70);             /* Warmes Orange */
+  --chart-3: oklch(0.55 0.12 150);            /* Gedämpftes Grün */
+  --chart-4: oklch(0.70 0.12 80);             /* Sanftes Gold */
+  --chart-5: oklch(0.60 0.10 40);             /* Warmes Braun */
+  --sidebar: oklch(0.96 0.01 80);             /* Warmes Sidebar */
+  --sidebar-foreground: oklch(0.25 0.02 50);  /* Dunkelbraun */
+  --sidebar-primary: oklch(0.55 0.18 25);     /* Terrakotta */
+  --sidebar-primary-foreground: oklch(0.98 0.01 80);
+  --sidebar-accent: oklch(0.94 0.02 80);      /* Hellbeige */
+  --sidebar-accent-foreground: oklch(0.30 0.02 50);
+  --sidebar-border: oklch(0.90 0.02 70);      /* Warmer Rand */
+  --sidebar-ring: oklch(0.55 0.18 25);        /* Terrakotta */
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  /* Warm & Gemütlich - Dark Mode */
+  --background: oklch(0.18 0.02 50);          /* Warmes Dunkelbraun */
+  --foreground: oklch(0.95 0.01 80);          /* Warmes Off-White */
+  --card: oklch(0.22 0.025 50);               /* Etwas helleres Warmbraun */
+  --card-foreground: oklch(0.95 0.01 80);     /* Warmes Off-White */
+  --popover: oklch(0.22 0.025 50);            /* Warmbraun */
+  --popover-foreground: oklch(0.95 0.01 80);  /* Off-White */
+  --primary: oklch(0.70 0.15 30);             /* Helleres Terrakotta */
+  --primary-foreground: oklch(0.18 0.02 50);  /* Dunkelbraun */
+  --secondary: oklch(0.28 0.02 50);           /* Warmes Dunkelgrau */
+  --secondary-foreground: oklch(0.95 0.01 80);/* Off-White */
+  --muted: oklch(0.28 0.02 50);               /* Gedämpft warm */
+  --muted-foreground: oklch(0.70 0.02 70);    /* Mittleres Warmgrau */
+  --accent: oklch(0.30 0.03 45);              /* Warmer Akzent */
+  --accent-foreground: oklch(0.95 0.01 80);   /* Off-White */
+  --destructive: oklch(0.65 0.20 25);         /* Warmes Rot */
+  --border: oklch(0.95 0.01 80 / 10%);        /* Warmer Rand */
+  --input: oklch(0.95 0.01 80 / 15%);         /* Warmes Input */
+  --ring: oklch(0.70 0.15 30);                /* Terrakotta Ring */
+  --chart-1: oklch(0.70 0.15 30);             /* Terrakotta */
+  --chart-2: oklch(0.75 0.12 70);             /* Warmes Orange */
+  --chart-3: oklch(0.65 0.10 150);            /* Grün */
+  --chart-4: oklch(0.75 0.10 80);             /* Gold */
+  --chart-5: oklch(0.70 0.08 40);             /* Braun */
+  --sidebar: oklch(0.20 0.025 50);            /* Warmes Sidebar */
+  --sidebar-foreground: oklch(0.95 0.01 80);  /* Off-White */
+  --sidebar-primary: oklch(0.70 0.15 30);     /* Terrakotta */
+  --sidebar-primary-foreground: oklch(0.95 0.01 80);
+  --sidebar-accent: oklch(0.28 0.02 50);      /* Dunkelgrau */
+  --sidebar-accent-foreground: oklch(0.95 0.01 80);
+  --sidebar-border: oklch(0.95 0.01 80 / 10%);/* Warmer Rand */
+  --sidebar-ring: oklch(0.70 0.15 30);        /* Terrakotta */
 }
 
 @layer base {
