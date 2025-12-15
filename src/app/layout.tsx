@@ -16,8 +16,11 @@ export const metadata: Metadata = {
   title: "Save The People Worldwide | Charity by Katharina Erdem",
   description: "At Save the People Worldwide, we believe that every human being has the power to make a difference. Founded by Katharina Erdem - Do good for no reason.",
   icons: {
-    icon: '/logo.jpeg',
-    apple: '/logo.jpeg',
+    icon: [
+      { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    apple: '/favicon.png',
   },
 };
 
