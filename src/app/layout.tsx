@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Save The People Worldwide | Charity by Katharina Erdem",
+  title: "Save People Worldwide | Charity by Katharina Erdem",
   description: "At Save the People Worldwide, we believe that every human being has the power to make a difference. Founded by Katharina Erdem - Do good for no reason.",
   icons: {
     icon: [
