@@ -9,7 +9,7 @@ const Logo = ({ className }: { className?: string }) => {
         alt='Save The People Worldwide'
         className='size-8.5 rounded-full object-cover'
       />
-      <span className='text-xl font-semibold'>Save The People</span>
+      <span className='text-xl font-semibold'>Save People Worldwide</span>
     </div>
   )
 }
