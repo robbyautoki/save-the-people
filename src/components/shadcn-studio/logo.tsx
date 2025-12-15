@@ -5,7 +5,7 @@ const Logo = ({ className }: { className?: string }) => {
   return (
     <div className={cn('flex items-center gap-2.5', className)}>
       <img
-        src='/WhatsApp Image 2025-12-07 at 14.04.30 (10).jpeg'
+        src='/logo.jpeg'
         alt='Save The People Worldwide'
         className='size-8.5 rounded-full object-cover'
       />

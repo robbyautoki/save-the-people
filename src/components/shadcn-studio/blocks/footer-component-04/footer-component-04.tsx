@@ -47,8 +47,7 @@ const Footer = () => {
         </p>
 
         <div className='flex items-center gap-6 text-nowrap'>
-          <a href='#'>Privacy Policy</a>
-          <a href='#'>Terms & Conditions</a>
+          <a href='/imprint'>Imprint</a>
         </div>
       </div>
     </footer>
