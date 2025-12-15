@@ -108,7 +108,7 @@ const HeroSection = () => {
             className='relative flex items-center justify-center lg:col-span-2'
           >
             <img
-              src='/WhatsApp Image 2025-12-07 at 14.04.30 (10).jpeg'
+              src='/logo.jpeg'
               alt='Save The People Worldwide Logo'
               className='size-full max-w-md object-contain'
             />

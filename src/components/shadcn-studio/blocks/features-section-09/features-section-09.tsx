@@ -65,7 +65,7 @@ const Features = ({ tabs }: { tabs: tabsData }) => {
             <div className='relative flex size-36 items-center justify-center'>
               <div className='absolute inset-0 flex items-center justify-center'>
                 <img
-                  src='/WhatsApp Image 2025-12-07 at 14.04.30 (10).jpeg'
+                  src='/logo.jpeg'
                   className='z-1 size-32 rounded-4xl object-cover'
                   alt='Save The People Worldwide'
                 />

@@ -27,7 +27,7 @@ const galleryImagesRow1 = [
   '/WhatsApp Image 2025-12-07 at 14.04.30 (7).jpeg',
   '/WhatsApp Image 2025-12-07 at 14.04.30 (8).jpeg',
   '/WhatsApp Image 2025-12-07 at 14.04.30 (9).jpeg',
-  '/WhatsApp Image 2025-12-07 at 14.04.30 (10).jpeg'
+  '/logo.jpeg'
 ]
 
 const galleryImagesRow2 = [
